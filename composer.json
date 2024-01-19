@@ -20,7 +20,7 @@
   },
   "require": {
     "syspass/extension-installer-plugin": "^2.0",
-    "php": "~7.3 || ~7.4",
+    "php": "^8.1",
     "bacon/bacon-qr-code": "^2.0",
     "ext-gettext": "*"
   },
@@ -35,5 +35,10 @@
       "src/lib/Controllers/AuthenticatorController.php",
       "src/lib/Controllers/AuthenticatorLoginController.php"
     ]
+  },
+  "config": {
+    "allow-plugins": {
+      "syspass/extension-installer-plugin": true
+    }
   }
 }
